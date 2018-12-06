@@ -1,0 +1,9 @@
+demo:
+  leader:
+    id: l2
+    name: name2
+
+higgs:
+  trust:
+    consensus: copycat
+    B: false

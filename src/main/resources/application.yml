@@ -1,0 +1,20 @@
+demo:
+  users:
+    a:
+      id: 12
+      name: name1
+    b:
+      id: b1
+      name: b
+  followers:
+    -
+      id: f1
+      name: fe
+    -
+      id: f2
+      name: t
+  leader:
+    id: le
+    name: name
+  test: sd
+
