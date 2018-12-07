@@ -30,7 +30,7 @@ WebAsyncManager.startAsyncProcessing(Object[])  (org.springframework.web.context
 #### ReturnValueHandler初始化位置及handler顺序
 
 `org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.afterPropertiesSet`
-```
+```java
 private List<HandlerMethodReturnValueHandler> getDefaultReturnValueHandlers() {
 		List<HandlerMethodReturnValueHandler> handlers = new ArrayList<HandlerMethodReturnValueHandler>();
 
