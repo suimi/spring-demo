@@ -1,7 +1,7 @@
 
 ### spring bean 初始化过程
 
-```
+```java
 AbstractAutowireCapableBeanFactory.initializeBean(String, Object, RootBeanDefinition)  (org.springframework.beans.factory.support)
     AbstractAutowireCapableBeanFactory.doCreateBean(String, RootBeanDefinition, Object[])  (org.springframework.beans.factory.support)
         AbstractAutowireCapableBeanFactory.createBean(String, RootBeanDefinition, Object[])(2 usages)  (org.springframework.beans.factory.support)
@@ -16,7 +16,7 @@ AbstractAutowireCapableBeanFactory.initializeBean(String, Object, RootBeanDefini
 ```
 
 ### DeferredResult 异步处理过程
-```
+```java
 WebAsyncManager.startAsyncProcessing(Object[])  (org.springframework.web.context.request.async)
     WebAsyncManager.startCallableProcessing(WebAsyncTask<?>, Object...)  (org.springframework.web.context.request.async)
     WebAsyncManager.startDeferredResultProcessing(DeferredResult<?>, Object...)  (org.springframework.web.context.request.async)
@@ -49,6 +49,7 @@ private List<HandlerMethodReturnValueHandler> getDefaultReturnValueHandlers() {
 
 		// Annotation-based return value types
 		handlers.add(new ModelAttributeMethodProcessor(false));
+		//@ResponseBody结果处理
 		handlers.add(new RequestResponseBodyMethodProcessor(getMessageConverters(),
 				this.contentNegotiationManager, this.requestResponseBodyAdvice));
 
