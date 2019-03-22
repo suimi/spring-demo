@@ -17,4 +17,7 @@ demo:
     id: le
     name: name
   test: sd
+higgs:
+  trust:
+    consensus: copycat
 
