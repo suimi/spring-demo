@@ -1,4 +1,8 @@
 
+[![Build Status](https://travis-ci.org/suimi/spring-demo.svg?branch=master)](https://travis-ci.org/suimi/spring-demo)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.suimi%3Aspring-demo&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.suimi%3Aspring-demo)
+[![Coverage Status](https://coveralls.io/repos/github/suimi/spring-demo/badge.svg)](https://coveralls.io/github/suimi/spring-demo)
+
 ### spring bean 初始化过程
 
 ```java
