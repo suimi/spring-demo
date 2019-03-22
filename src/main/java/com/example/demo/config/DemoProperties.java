@@ -32,6 +32,10 @@ import java.util.Set;
 
     private String test;
 
+    private boolean isDemo = true;
+
+    private boolean verify = true;
+
     @Getter @Setter public static class User {
         private String name;
         private String id;
