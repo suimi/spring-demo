@@ -7,5 +7,6 @@ jdk:
 addons:
   sonarcloud:
     organization: "suimi-github"
-script:
-  - sonar-scanner
+
+after_success:
+  - mvn sonar:sonar
